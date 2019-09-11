@@ -8,13 +8,13 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="60"></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
@@ -55,8 +55,10 @@
                  Grid.Row="4" 
                  Grid.ColumnSpan="2"/>
 
-        <Button Content="Submit" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2"/>
-
+        <Button Content="Submit" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="1"/>
+        <StackPanel Grid.Row="6" Grid.ColumnSpan="3" Grid.Column="1" Grid.RowSpan="2">
+            <TextBlock Text="Must have"></TextBlock>
+        </StackPanel>
 
     </Grid>
 </Window>
